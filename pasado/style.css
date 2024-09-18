@@ -1,40 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #ffffff; /* White background for form */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #508bfc; /* Blue background for image section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Responsive image */
 }
 
 h2 {
     margin-bottom: 20px;
+    color: #343a40; /* Dark gray text */
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
 }
 
 button {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px;
+    background-color: #007bff; /* Bootstrap primary color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 #toggleText {
